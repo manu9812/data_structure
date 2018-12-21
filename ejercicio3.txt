@@ -1,0 +1,43 @@
+Se le asigna el puntero al nodo principal de una lista vinculada y un entero para agregar a la lista. Cree un nuevo nodo con el entero dado, inserte este nodo al principio de la lista enlazada y devuelva el nuevo nodo principal. El puntero de cabeza dado puede ser nulo, lo que significa que la lista inicial está vacía.
+
+Formato de entrada
+
+Debe completar el SinglyLinkedListNode Insert(SinglyLinkedListNode head, int data)método que toma dos argumentos: el encabezado de la lista vinculada y el entero para insertar. NO debes leer ninguna entrada de stdin / console.
+
+La entrada se maneja por código en el editor y es como sigue:
+
+La primera línea contiene un número entero , que denota el número de elementos que se insertarán al principio de la lista. 
+Las siguientes líneas contienen un entero cada una, que denota el elemento a insertar.
+
+Restricciones
+
+Formato de salida
+
+Inserte el nuevo nodo en la cabecera y returnla cabecera de la lista vinculada actualizada. NO imprima nada en stdout / console.
+
+La salida es manejada por el código en el editor y es como sigue:
+
+Imprima los elementos de la lista enlazada de principio a fin, cada uno en una nueva línea.
+
+Entrada de muestra
+
+5
+383
+484
+392
+975
+321
+Salida de muestra
+
+321
+975
+392
+484
+383
+Explicación
+
+Inicialmente la lista en NULL. Después de insertar 383, la lista es 383 -> NULL. 
+Después de insertar 484, la lista es 484 -> 383 -> NULL. 
+Después de insertar 392, la lista es 392 -> 484 -> 383 -> NULL. 
+Después de insertar 975, la lista es 975 -> 392 -> 484 -> 383 -> NULL. 
+Después de insertar 321, la lista es 321 -> 975 -> 392 -> 484 -> 383 -> NULL.
